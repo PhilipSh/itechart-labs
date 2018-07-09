@@ -1,2 +1,2 @@
-import './js/searchLine.js';
-import './less/base.less'
+import "./less/main.less";
+console.log("hello, world");
