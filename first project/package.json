@@ -2,8 +2,8 @@
   "name": "",
   "version": "",
   "scripts": {
-    "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production --watch"
+    "dev": "webpack --mode development ./src/index.js --output ./dist/main.js --watch",
+    "build": "webpack --mode production ./src/index.js --output ./dist/main.js"
   },
   "devDependencies": {
     "css-loader": "^1.0.0",
