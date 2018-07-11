@@ -1,5 +1,28 @@
-@color:green;
-div{
-    color:#673457;
-    background: @color;
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 960px 150px 1fr;
+    grid-template-rows: 100px 600px 100px;
+    .header{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .article{
+        display: grid;
+        grid-template-columns: 1fr 170px 170px 1fr;
+        grid-template-rows: 1fr 1fr 100px 1fr;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .aside{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .footer{
+        grid-column-start:1;
+        grid-column-end:5;  
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 }

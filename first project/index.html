@@ -9,6 +9,34 @@
     <title>Food & Drink search for recipes</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header class="header"></header>
+        <article class="article">
+            <div class="article_searcher">
+            <input type="text" name="search" class="article_searcher_inputSearch" placeholder="Search Recipes">
+            <button class="article_searcher_buttonSearch" onclick="httpGetAsync('https://cors.io/?http://food2fork.com/api/search?key=14d4f957bf943fe0ae9172647a0f4d1f&q=eggs')">Search</button>
+            </div>
+        </article>
+        <aside class="aside_favorites"></aside>
+        <footer class="footer"></footer>
+    </div>
 </body>
+<script>
+function httpGetAsync(url, callback)
+{
+    var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+    if (request.readyState === 4) {
+        if (request.status === 200) {
+            document.body.className = 'ok';
+            alert(request.responseText);
+        } else {
+            document.body.className = 'error';
+        }
+    }
+};
+request.open("GET", url , true);
+request.send(null);
+}
+</script>
 </html>
