@@ -1,3 +1,3 @@
-import "./less/main.less";
-import "./less/article.less";
-import "./js/search.js";
+import './less/main.less';
+import './less/article.less';
+import './js/search';
