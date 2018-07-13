@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/style.css">
     <script src="dist/main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Food & Drink search for recipes</title>
@@ -16,9 +13,14 @@
         <header class="header"></header>
         <article class="article">
             <div class="article_searcher">
-                <input id="elem" type="text" name="search" class="article_searcher_inputSearch" placeholder="Search Recipes">
-                <button class="article_searcher_buttonSearch">Search</button>
+                <input id="searchLine" type="text" name="search" class="article_searcher_inputSearch" placeholder="Search Recipes">
+                <button id="article_searcher_buttonSearch">Search</button>
             </div>
+            <article>
+                <ul>
+                    <li id="li"></li>
+                </ul>
+            </article>
         </article>
         <aside class="aside_favorites"></aside>
         <footer class="footer"></footer>

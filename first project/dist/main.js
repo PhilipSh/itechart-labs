@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".article_searcher {\\n  grid-column-start: 2;\\n  grid-column-end: 4;\\n  grid-row-start: 3;\\n  grid-row-end: 4;\\n}\\n.article_searcher_buttonSearch {\\n  height: 40px;\\n  width: 80px;\\n  margin: 10px;\\n  border-radius: 2px;\\n  border: none;\\n  outline-color: aquamarine;\\n}\\n.article_searcher_inputSearch {\\n  margin: 10px;\\n  padding: 5px;\\n  height: 20px;\\n  width: 200px;\\n  background-color: rgba(226, 251, 255, 0.2);\\n  outline: none;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/less/article.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".article_searcher {\\n  grid-column-start: 2;\\n  grid-column-end: 4;\\n  grid-row-start: 3;\\n  grid-row-end: 4;\\n}\\n#article_searcher_buttonSearch {\\n  height: 40px;\\n  width: 80px;\\n  margin: 10px;\\n  border-radius: 2px;\\n  border: none;\\n  outline-color: aquamarine;\\n  box-shadow: 2px 2px 1px 1px #c7c7c7;\\n}\\n.article_searcher_inputSearch {\\n  margin: 10px;\\n  padding: 5px;\\n  height: 20px;\\n  width: 200px;\\n  background-color: rgba(226, 251, 255, 0.2);\\n  outline: none;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/less/article.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
 
 /***/ }),
 
@@ -149,7 +149,18 @@ eval("\r\n/**\r\n * When source maps are enabled, `style-loader` uses a link ele
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./less/main.less */ \"./src/less/main.less\");\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_main_less__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./less/article.less */ \"./src/less/article.less\");\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_less_article_less__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/search */ \"./src/js/search.js\");\n/* harmony import */ var _js_search__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_search__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./less/main.less */ \"./src/less/main.less\");\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_main_less__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./less/article.less */ \"./src/less/article.less\");\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_less_article_less__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/search */ \"./src/js/search.js\");\n/* harmony import */ var _js_search__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_search__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_render__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/render */ \"./src/js/render.js\");\n/* harmony import */ var _js_render__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_render__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/render.js":
+/*!**************************!*\
+  !*** ./src/js/render.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/js/render.js?");
 
 /***/ }),
 
@@ -160,7 +171,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _les
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("function getRecipes() {\n    var recipe = document.getElementById('elem').value;\n    axios.get('https://cors.io/?http://food2fork.com/api/search?', {\n        params: {\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\n            q: recipe\n        }\n    })\n        .then(function (response) {\n            console.log(response)\n            console.log(response.data.count)\n        })\n        .catch(function (error) {\n            console.log(error);\n        })\n}\n\n\n\n//# sourceURL=webpack:///./src/js/search.js?");
+eval("function render(response){\n    let li = document.getElementById('li');\n    li.innerHTML = response.data.recipes[0].title;\n}\n\nwindow.onload = function getRecipes() {\n    const but = document.getElementById('article_searcher_buttonSearch');\n    let recipe = document.getElementById('searchLine').value;\n    axios.get('https://cors.io/?http://food2fork.com/api/search?', {\n        params: {\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\n            q: recipe\n        }\n    })\n        .then(function (response) {\n            console.log(response)\n            render(response);\n        })\n        .catch(function (error) {\n            console.log(error);\n        })\n        but.addEventListener('click', getRecipes, false);\n}\n\n\n//# sourceURL=webpack:///./src/js/search.js?");
 
 /***/ }),
 
