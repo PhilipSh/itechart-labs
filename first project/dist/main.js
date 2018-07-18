@@ -115,7 +115,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".recipeDish {\\n  background: #ddd;\\n  margin: 10px;\\n  padding: 10px;\\n  border: 1px solid;\\n}\\n.recipeDish img {\\n  width: 20%;\\n  height: 20%;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/less/searchResult.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".recipeDish {\\n  display: grid;\\n  grid-template-columns: 250px auto 1fr;\\n  grid-template-rows: auto 60px 80px;\\n  margin: 10px;\\n  padding: 10px;\\n}\\n.recipeDish .title {\\n  line-height: 1.5;\\n  grid-column-start: 1;\\n  grid-column-end: 2;\\n  grid-row-start: 1;\\n  grid-row-end: 2;\\n}\\n.recipeDish img {\\n  height: 100%;\\n  grid-column-start: 1;\\n  grid-column-end: 2;\\n  grid-row-start: 2;\\n  grid-row-end: 4;\\n}\\n.recipeDish input {\\n  grid-column-start: 2;\\n  grid-column-end: 3;\\n  grid-row-start: 2;\\n  grid-row-end: 3;\\n  margin: 10px;\\n  width: 120px;\\n  height: 30px;\\n  border: 1px solid #156270;\\n  background: #fff;\\n}\\n.recipeDish .ingredients {\\n  grid-column-start: 2;\\n  grid-column-end: 3;\\n  grid-row-start: 3;\\n  grid-row-end: 4;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/less/searchResult.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
 
 /***/ }),
 
@@ -160,29 +160,55 @@ eval("\r\n/**\r\n * When source maps are enabled, `style-loader` uses a link ele
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./less/main.less */ \"./src/less/main.less\");\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_main_less__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./less/article.less */ \"./src/less/article.less\");\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_less_article_less__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _less_searchResult_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./less/searchResult.less */ \"./src/less/searchResult.less\");\n/* harmony import */ var _less_searchResult_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_less_searchResult_less__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/search */ \"./src/js/search.js\");\n/* harmony import */ var _js_search__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_search__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_render__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/render */ \"./src/js/render.js\");\n/* harmony import */ var _js_render__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_render__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./less/main.less */ \"./src/less/main.less\");\n/* harmony import */ var _less_main_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_main_less__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./less/article.less */ \"./src/less/article.less\");\n/* harmony import */ var _less_article_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_less_article_less__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _less_searchResult_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./less/searchResult.less */ \"./src/less/searchResult.less\");\n/* harmony import */ var _less_searchResult_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_less_searchResult_less__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_getRecipes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/getRecipes */ \"./src/js/getRecipes.js\");\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/js/render.js":
-/*!**************************!*\
-  !*** ./src/js/render.js ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/js/getIngredients.js":
+/*!**********************************!*\
+  !*** ./src/js/getIngredients.js ***!
+  \**********************************/
+/*! exports provided: getIngredients */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/js/render.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIngredients\", function() { return getIngredients; });\n/* harmony import */ var _renderIngredients__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./renderIngredients */ \"./src/js/renderIngredients.js\");\n\r\n\r\nfunction getIngredients(recipe_id, new_li) {\r\n    axios.get('https://cors.io/?http://food2fork.com/api/get?', {\r\n        params: {\r\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\r\n            rId: recipe_id\r\n        }\r\n    })\r\n        .then(function (response) {\r\n            console.log(response);\r\n            Object(_renderIngredients__WEBPACK_IMPORTED_MODULE_0__[\"renderIngredients\"])(response, new_li);\r\n        })\r\n        .catch(function (error) {\r\n            console.log(error);\r\n        })\r\n}\n\n//# sourceURL=webpack:///./src/js/getIngredients.js?");
 
 /***/ }),
 
-/***/ "./src/js/search.js":
-/*!**************************!*\
-  !*** ./src/js/search.js ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/js/getRecipes.js":
+/*!******************************!*\
+  !*** ./src/js/getRecipes.js ***!
+  \******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("function renderSearch(response) {\n    const result = document.getElementsByClassName('resultSearch')[0];\n    while (result.firstChild) {\n        result.removeChild(result.firstChild);\n    }\n    for (let i = 0; i < 30; i++) {\n        let imgDish = document.createElement('img');\n        let new_li = document.createElement('li');\n        let title = document.createElement('p');\n        title.innerHTML = response.data.recipes[i].title;\n        imgDish.src = response.data.recipes[i].image_url;\n        result.appendChild(new_li);\n        new_li.appendChild(title);\n        new_li.appendChild(imgDish);\n        new_li.className = 'recipeDish';\n        getIngredients(response.data.recipes[i].recipe_id, new_li);\n    }\n}\n\nwindow.onload = function getRecipes() {\n    const but = document.getElementById('article_searcher_buttonSearch');\n    let recipe = document.getElementById('searchLine').value;\n    axios.get('https://cors.io/?http://food2fork.com/api/search?', {\n        params: {\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\n            q: recipe\n        }\n    })\n        .then(function (response) {\n            console.log(response)\n            renderSearch(response);\n        })\n        .catch(function (error) {\n            console.log(error);\n        })\n    but.addEventListener('click', getRecipes, false);\n}\nfunction getIngredients(recipe_id, new_li) {\n    axios.get('https://cors.io/?http://food2fork.com/api/get?', {\n        params: {\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\n            rId: recipe_id\n        }\n    })\n        .then(function (response) {\n            console.log(response);\n            renderIngredients(response, new_li);\n        })\n        .catch(function (error) {\n            console.log(error);\n        })\n}\nfunction renderIngredients(response, new_li) {\n    let p = document.createElement('p');\n    for (let lengthIngredients = 0; lengthIngredients < response.data.recipe.ingredients.length; lengthIngredients++) {\n        p.innerHTML = p.innerHTML + response.data.recipe.ingredients[lengthIngredients] + ', ';\n    }\n    new_li.appendChild(p);\n}\n\n//# sourceURL=webpack:///./src/js/search.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _renderIngredients__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./renderIngredients */ \"./src/js/renderIngredients.js\");\n/* harmony import */ var _renderRecipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./renderRecipes */ \"./src/js/renderRecipes.js\");\n/* harmony import */ var _getIngredients__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./getIngredients */ \"./src/js/getIngredients.js\");\n\r\n\r\n\r\n \r\nwindow.onload = function getRecipes() {\r\n    const but = document.getElementById('article_searcher_buttonSearch');\r\n    let recipe = document.getElementById('searchLine').value;\r\n    axios.get('https://cors.io/?http://food2fork.com/api/search?', {\r\n        params: {\r\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\r\n            q: recipe\r\n        }\r\n    })\r\n        .then(function (response) {\r\n            console.log(response)\r\n            Object(_renderRecipes__WEBPACK_IMPORTED_MODULE_1__[\"renderSearch\"])(response);\r\n        })\r\n        .catch(function (error) {\r\n            console.log(error);\r\n        })\r\n    but.addEventListener('click', getRecipes, false);\r\n}\r\n\n\n//# sourceURL=webpack:///./src/js/getRecipes.js?");
+
+/***/ }),
+
+/***/ "./src/js/renderIngredients.js":
+/*!*************************************!*\
+  !*** ./src/js/renderIngredients.js ***!
+  \*************************************/
+/*! exports provided: renderIngredients */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderIngredients\", function() { return renderIngredients; });\nfunction renderIngredients(response, new_li) {\r\n    let p = document.createElement('p');\r\n    p.innerHTML = response.data.recipe.ingredients[0];\r\n    for (let lengthIngredients = 1; lengthIngredients < response.data.recipe.ingredients.length; lengthIngredients++) {\r\n        p.innerHTML = p.innerHTML + ', ' + response.data.recipe.ingredients[lengthIngredients];\r\n    }\r\n    p.className = 'ingredients';\r\n    new_li.appendChild(p);\r\n}\n\n//# sourceURL=webpack:///./src/js/renderIngredients.js?");
+
+/***/ }),
+
+/***/ "./src/js/renderRecipes.js":
+/*!*********************************!*\
+  !*** ./src/js/renderRecipes.js ***!
+  \*********************************/
+/*! exports provided: renderSearch */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderSearch\", function() { return renderSearch; });\n/* harmony import */ var _getIngredients__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getIngredients */ \"./src/js/getIngredients.js\");\n\r\n\r\nfunction renderSearch(response) {\r\n    const result = document.getElementsByClassName('resultSearch')[0];\r\n    while (result.firstChild) {\r\n        result.removeChild(result.firstChild);\r\n    }\r\n    for (let i = 0; i < 30; i++) {\r\n        let imgDish = document.createElement('img');\r\n        let new_li = document.createElement('li');\r\n        let title = document.createElement('p');\r\n        let showIngredients = document.createElement('input');\r\n        showIngredients.type = 'button';\r\n        showIngredients.value = 'Show Ingredients';\r\n        title.innerHTML = response.data.recipes[i].title;\r\n        imgDish.src = response.data.recipes[i].image_url;\r\n        result.appendChild(new_li);\r\n        new_li.appendChild(title);\r\n        new_li.appendChild(imgDish);\r\n        new_li.appendChild(showIngredients);\r\n        new_li.className = 'recipeDish';\r\n        title.className = 'title';\r\n        showIngredients.addEventListener('click',_getIngredients__WEBPACK_IMPORTED_MODULE_0__[\"getIngredients\"].bind(null, response.data.recipes[i].recipe_id, new_li), false);\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/js/renderRecipes.js?");
 
 /***/ }),
 
