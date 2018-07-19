@@ -90,10 +90,22 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_components_header_render_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/components/header/render-header */ \"./src/js/components/header/render-header.js\");\n/* harmony import */ var _js_components_header_render_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_components_header_render_header__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/header/render-header.js":
+/*!***************************************************!*\
+  !*** ./src/js/components/header/render-header.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("window.onload = function(){\nlet application = document.getElementsByClassName(\"application\")[0];\nlet header = document.createElement('header');\nheader.innerHTML = '\\\n<header>\\\n<input type=\"text\" class=\"header__search-line\">\\\n<input type=\"button\" class=\"header__button-search\">\\\n<input type=\"button\" class=\"header__button-favorites\">\\\n</header>';\napplication.appendChild(header);\n}\n\n\n//# sourceURL=webpack:///./src/js/components/header/render-header.js?");
 
 /***/ })
 
