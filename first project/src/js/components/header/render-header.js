@@ -1,11 +1,12 @@
+import '../../../style/header/header.less'
+
 window.onload = function(){
 let application = document.getElementsByClassName("application")[0];
 let header = document.createElement('header');
+header.className = 'header';
 header.innerHTML = '\
-<header>\
-<input type="text" class="header__search-line">\
-<input type="button" class="header__button-search">\
-<input type="button" class="header__button-favorites">\
-</header>';
+<input type="text" class="header__search-line" placeholder = "Enter the name of the dish">\
+<input type="button" class="header__button-search" value = "Search">\
+<input type="button" class="header__button-favorites" value = "Favorites">';
 application.appendChild(header);
 }
