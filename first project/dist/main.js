@@ -385,25 +385,36 @@ eval("\r\n\r\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modu
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/style/header/header.less":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js!./src/style/header/header.less ***!
-  \*******************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/lib/loader.js!./src/style/article/article.less":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/less-loader/lib/loader.js!./src/style/article/article.less ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".header {\\n  grid-column-start: 2;\\n  grid-column-end: 3;\\n  grid-row-start: 1;\\n  grid-row-end: 2;\\n  margin: auto;\\n}\\n.header .header__search-line {\\n  width: 200px;\\n  height: 20px;\\n  margin: 10px;\\n  padding: 5px;\\n}\\n.header .header__button-search,\\n.header .header__button-favorites {\\n  margin: 10px;\\n  background: #009af3;\\n  color: #fff;\\n  border: none;\\n  width: 70px;\\n  height: 30px;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style/header/header.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".article {\\n  grid-column-start: 1;\\n  grid-column-end: 4;\\n  grid-row-start: 2;\\n  grid-row-end: 3;\\n}\\n.article .article__result-search-api1,\\n.article .article__result-search-api2 {\\n  list-style: none;\\n}\\n.article .article__result-search-api1 .article__recipe-dish,\\n.article .article__result-search-api2 .article__recipe-dish {\\n  display: grid;\\n  grid-template-columns: 250px auto 100px;\\n  grid-template-rows: 80px auto auto;\\n  margin: 10px;\\n  padding: 10px;\\n}\\n.article .article__result-search-api1 .article__recipe-dish p,\\n.article .article__result-search-api2 .article__recipe-dish p {\\n  line-height: 1.5;\\n  grid-column-start: 1;\\n  grid-column-end: 2;\\n  grid-row-start: 1;\\n  grid-row-end: 2;\\n}\\n.article .article__result-search-api1 .article__recipe-dish img,\\n.article .article__result-search-api2 .article__recipe-dish img {\\n  min-height: 250px;\\n  min-width: 250px;\\n  max-height: 250px;\\n  max-width: 400px;\\n  grid-column-start: 1;\\n  grid-column-end: 2;\\n  grid-row-start: 2;\\n  grid-row-end: 4;\\n}\\n.article .article__result-search-api1 .article__recipe-dish .article__button-favorites,\\n.article .article__result-search-api2 .article__recipe-dish .article__button-favorites,\\n.article .article__result-search-api1 .article__recipe-dish .article__button-ingredients,\\n.article .article__result-search-api2 .article__recipe-dish .article__button-ingredients {\\n  height: 40px;\\n  background: #009af3;\\n  color: #fff;\\n  border: none;\\n}\\n.article .article__result-search-api1 .article__recipe-dish .article__button-favorites,\\n.article .article__result-search-api2 .article__recipe-dish .article__button-favorites {\\n  width: 70px;\\n  grid-column-start: 3;\\n  grid-column-end: 4;\\n  grid-row-start: 1;\\n  grid-row-end: 2;\\n}\\n.article .article__result-search-api1 .article__recipe-dish .article__button-ingredients,\\n.article .article__result-search-api2 .article__recipe-dish .article__button-ingredients {\\n  width: 120px;\\n  grid-column-start: 2;\\n  grid-column-end: 3;\\n  grid-row-start: 1;\\n  grid-row-end: 2;\\n}\\n.article .article__result-search-api1 .article__recipe-dish .article__ingredients,\\n.article .article__result-search-api2 .article__recipe-dish .article__ingredients {\\n  padding: 10px;\\n  position: relative;\\n  top: -50px;\\n  text-align: center;\\n  background-color: #fff;\\n  border: 6px solid #666;\\n  border-radius: 58px;\\n  box-shadow: 2px 2px 4px #888;\\n  background: rgba(219, 219, 219, 0.8);\\n  grid-column-start: 2;\\n  grid-column-end: 3;\\n  grid-row-start: 2;\\n  grid-row-end: 3;\\n}\\n.article .article__result-search-api1 .article__recipe-dish .article__ingredients:before,\\n.article .article__result-search-api2 .article__recipe-dish .article__ingredients:before {\\n  content: \\\" \\\";\\n  position: absolute;\\n  left: 10px;\\n  bottom: -40px;\\n  width: 40px;\\n  height: 40px;\\n  background-color: #dbdbdb;\\n  border: 6px solid #666;\\n  border-radius: 28px;\\n}\\n.article .article__result-search-api1 .article__recipe-dish .article__ingredients:after,\\n.article .article__result-search-api2 .article__recipe-dish .article__ingredients:after {\\n  content: \\\" \\\";\\n  position: absolute;\\n  width: 20px;\\n  height: 20px;\\n  left: 5px;\\n  background-color: #dbdbdb;\\n  border: 6px solid #666;\\n  bottom: -60px;\\n  border-radius: 18px;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style/article/article.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/style/layout.less":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js!./src/style/layout.less ***!
-  \************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/lib/loader.js!./src/style/header/header.less":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/less-loader/lib/loader.js!./src/style/header/header.less ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\n  width: 960px;\\n  margin: 0 auto;\\n}\\n.application {\\n  display: grid;\\n  grid-template-columns: 1fr 500px 1fr;\\n  grid-template-rows: 200px 1fr;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style/layout.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".header {\\n  grid-column-start: 2;\\n  grid-column-end: 3;\\n  grid-row-start: 1;\\n  grid-row-end: 2;\\n  margin: auto;\\n}\\n.header .header__search-line {\\n  width: 200px;\\n  height: 20px;\\n  margin: 10px;\\n  padding: 5px;\\n}\\n.header .header__button-search,\\n.header .header__button-favorites {\\n  margin: 10px;\\n  background: #009af3;\\n  color: #fff;\\n  border: none;\\n  width: 70px;\\n  height: 40px;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style/header/header.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/lib/loader.js!./src/style/layout.less":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/less-loader/lib/loader.js!./src/style/layout.less ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"body {\\n  width: 960px;\\n  margin: 0 auto;\\n}\\n.application {\\n  display: grid;\\n  grid-template-columns: 1fr 500px 1fr;\\n  grid-template-rows: 200px 1fr 200px;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/style/layout.less?./node_modules/css-loader!./node_modules/less-loader/lib/loader.js");
 
 /***/ }),
 
@@ -470,19 +481,55 @@ eval("\r\n/**\r\n * When source maps are enabled, `style-loader` uses a link ele
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_components_header_render_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/components/header/render-header */ \"./src/js/components/header/render-header.js\");\n/* harmony import */ var _js_components_header_header_button_search_header_button_search__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/components/header/header__button-search/header__button-search */ \"./src/js/components/header/header__button-search/header__button-search.js\");\n/* harmony import */ var _style_layout_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/layout.less */ \"./src/style/layout.less\");\n/* harmony import */ var _style_layout_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_layout_less__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_components_header_render_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/components/header/render-header */ \"./src/js/components/header/render-header.js\");\n/* harmony import */ var _js_components_render__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/components/render */ \"./src/js/components/render.js\");\n/* harmony import */ var _style_layout_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/layout.less */ \"./src/style/layout.less\");\n/* harmony import */ var _style_layout_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_layout_less__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/js/components/header/header__button-search/header__button-search.js":
-/*!*********************************************************************************!*\
-  !*** ./src/js/components/header/header__button-search/header__button-search.js ***!
-  \*********************************************************************************/
-/*! no exports provided */
+/***/ "./src/js/components/article/article-result-search/render-ingredients-api2.js":
+/*!************************************************************************************!*\
+  !*** ./src/js/components/article/article-result-search/render-ingredients-api2.js ***!
+  \************************************************************************************/
+/*! exports provided: renderIngredientsApi2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _services_api_food2fork_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../services/api/food2fork-api */ \"./src/js/services/api/food2fork-api.js\");\n\n\nlet searchLine = document.getElementsByClassName('header__search-line')[0];\nlet buttonSearch = document.getElementsByClassName('header__button-search')[0];\nif(buttonSearch)\nbuttonSearch.addEventListener('click', _services_api_food2fork_api__WEBPACK_IMPORTED_MODULE_0__[\"searchRecipe\"], false);\nconsole.log(Object(_services_api_food2fork_api__WEBPACK_IMPORTED_MODULE_0__[\"searchRecipe\"])(searchLine));\n\n\n//# sourceURL=webpack:///./src/js/components/header/header__button-search/header__button-search.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderIngredientsApi2\", function() { return renderIngredientsApi2; });\nlet renderIngredientsApi2 = (response, new_li) =>{\r\n    let ingredients = document.createElement(\"p\");\r\n      ingredients.className = \"article__ingredients\";\r\n      ingredients.innerHTML = response.ingredients;\r\n    new_li.appendChild(ingredients);\r\n  }\n\n//# sourceURL=webpack:///./src/js/components/article/article-result-search/render-ingredients-api2.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/article/article-result-search/render-recipes-api2.js":
+/*!********************************************************************************!*\
+  !*** ./src/js/components/article/article-result-search/render-recipes-api2.js ***!
+  \********************************************************************************/
+/*! exports provided: renderRecipesApi2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderRecipesApi2\", function() { return renderRecipesApi2; });\n/* harmony import */ var _render_ingredients_api2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./render-ingredients-api2 */ \"./src/js/components/article/article-result-search/render-ingredients-api2.js\");\n\r\n\r\nlet renderRecipesApi2 = (arrRecipes) => {\r\n    let resultSearch = document.getElementsByClassName(\"article__result-search-api2\")[0];\r\n    while(resultSearch.firstChild) {\r\n      resultSearch.removeChild(resultSearch.firstChild);\r\n    }\r\n    for (let numberRecipe = 0; numberRecipe < arrRecipes.length; numberRecipe++){\r\n      let imgDish = document.createElement(\"img\");\r\n      let new_li = document.createElement(\"li\");\r\n      let title = document.createElement(\"p\");\r\n      let buttonFavorites = document.createElement(\"input\");\r\n      let buttonIgredients = document.createElement(\"input\");\r\n      title.innerHTML = arrRecipes[numberRecipe].title;\r\n      imgDish.src = arrRecipes[numberRecipe].thumbnail;\r\n      buttonFavorites.type = \"button\";\r\n      buttonFavorites.value = \"Favorites\";\r\n      buttonIgredients.type = \"button\";\r\n      buttonIgredients.value = \"Show Ingredients\";\r\n      resultSearch.appendChild(new_li);\r\n      new_li.appendChild(title);\r\n      new_li.appendChild(imgDish);\r\n      new_li.appendChild(buttonFavorites);\r\n      new_li.appendChild(buttonIgredients);\r\n      new_li.className = \"article__recipe-dish\";\r\n      buttonFavorites.className = \"article__button-favorites\";\r\n      buttonIgredients.className = \"article__button-ingredients\";\r\n      buttonIgredients.addEventListener(\"click\",_render_ingredients_api2__WEBPACK_IMPORTED_MODULE_0__[\"renderIngredientsApi2\"].bind(null, arrRecipes[numberRecipe], new_li));\r\n    }\r\n    console.log(arrRecipes);\r\n  };\n\n//# sourceURL=webpack:///./src/js/components/article/article-result-search/render-recipes-api2.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/article/article-result-search/render-recipes.js":
+/*!***************************************************************************!*\
+  !*** ./src/js/components/article/article-result-search/render-recipes.js ***!
+  \***************************************************************************/
+/*! exports provided: renderRecipesApi1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderRecipesApi1\", function() { return renderRecipesApi1; });\n/* harmony import */ var _services_api_get_ingredients__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../services/api/get-ingredients */ \"./src/js/services/api/get-ingredients.js\");\n\r\n\r\nlet renderRecipesApi1 = (arrRecipes) => {\r\n    let resultSearch = document.getElementsByClassName(\"article__result-search-api1\")[0];\r\n    while(resultSearch.firstChild) {\r\n      resultSearch.removeChild(resultSearch.firstChild);\r\n    }\r\n    for (let numberRecipe = 0; numberRecipe < arrRecipes.length; numberRecipe++){\r\n      let imgDish = document.createElement(\"img\");\r\n      let new_li = document.createElement(\"li\");\r\n      let title = document.createElement(\"p\");\r\n      let buttonFavorites = document.createElement(\"input\");\r\n      let buttonIgredients = document.createElement(\"input\");\r\n      title.innerHTML = arrRecipes[numberRecipe].title;\r\n      imgDish.src = arrRecipes[numberRecipe].image_url;\r\n      buttonFavorites.type = \"button\";\r\n      buttonFavorites.value = \"Favorites\";\r\n      buttonIgredients.type = \"button\";\r\n      buttonIgredients.value = \"Show Ingredients\";\r\n      resultSearch.appendChild(new_li);\r\n      new_li.appendChild(title);\r\n      new_li.appendChild(imgDish);\r\n      new_li.appendChild(buttonFavorites);\r\n      new_li.appendChild(buttonIgredients);\r\n      new_li.className = \"article__recipe-dish\";\r\n      buttonFavorites.className = \"article__button-favorites\";\r\n      buttonIgredients.className = \"article__button-ingredients\";\r\n      buttonIgredients.addEventListener(\"click\",_services_api_get_ingredients__WEBPACK_IMPORTED_MODULE_0__[\"getIngredients\"].bind(null, arrRecipes[numberRecipe].recipe_id, new_li));\r\n    }\r\n    console.log(arrRecipes);\r\n  };\n\n//# sourceURL=webpack:///./src/js/components/article/article-result-search/render-recipes.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/article/render-article.js":
+/*!*****************************************************!*\
+  !*** ./src/js/components/article/render-article.js ***!
+  \*****************************************************/
+/*! exports provided: renderArticle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderArticle\", function() { return renderArticle; });\n/* harmony import */ var _style_article_article_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../style/article/article.less */ \"./src/style/article/article.less\");\n/* harmony import */ var _style_article_article_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_article_article_less__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nlet renderArticle = () => {\r\nlet application = document.getElementsByClassName(\"application\")[0];\r\nlet article = document.createElement(\"article\");\r\narticle.className = \"article\";\r\narticle.innerHTML =\r\n  '\\\r\n      <ul class = \"article__result-search-api1\"></ul>\\\r\n      <ul class = \"article__result-search-api2\"></ul>';\r\napplication.appendChild(article);\r\n}\r\n\n\n//# sourceURL=webpack:///./src/js/components/article/render-article.js?");
 
 /***/ }),
 
@@ -490,11 +537,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ser
 /*!***************************************************!*\
   !*** ./src/js/components/header/render-header.js ***!
   \***************************************************/
+/*! exports provided: renderHeader */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderHeader\", function() { return renderHeader; });\n/* harmony import */ var _style_header_header_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../style/header/header.less */ \"./src/style/header/header.less\");\n/* harmony import */ var _style_header_header_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_header_header_less__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nlet renderHeader= () => {\r\nlet application = document.getElementsByClassName(\"application\")[0];\r\nlet header = document.createElement('header');\r\nheader.className = 'header';\r\nheader.innerHTML = '\\\r\n<input type=\"text\" class=\"header__search-line\" placeholder = \"Enter the name of the dish\">\\\r\n<input type=\"button\" class=\"header__button-search\" value = \"Search\">\\\r\n<input type=\"button\" class=\"header__button-favorites\" value = \"Favorites\">';\r\napplication.appendChild(header);\r\n}\n\n//# sourceURL=webpack:///./src/js/components/header/render-header.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/render.js":
+/*!*************************************!*\
+  !*** ./src/js/components/render.js ***!
+  \*************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_header_header_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../style/header/header.less */ \"./src/style/header/header.less\");\n/* harmony import */ var _style_header_header_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_header_header_less__WEBPACK_IMPORTED_MODULE_0__);\n\n\nwindow.onload = function(){\nlet application = document.getElementsByClassName(\"application\")[0];\nlet header = document.createElement('header');\nheader.className = 'header';\nheader.innerHTML = '\\\n<input type=\"text\" class=\"header__search-line\" placeholder = \"Enter the name of the dish\">\\\n<input type=\"button\" class=\"header__button-search\" value = \"Search\">\\\n<input type=\"button\" class=\"header__button-favorites\" value = \"Favorites\">';\napplication.appendChild(header);\n}\n\n\n//# sourceURL=webpack:///./src/js/components/header/render-header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header_render_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/header/render-header */ \"./src/js/components/header/render-header.js\");\n/* harmony import */ var _components_article_render_article__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/article/render-article */ \"./src/js/components/article/render-article.js\");\n/* harmony import */ var _services_api_food2fork_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/api/food2fork-api */ \"./src/js/services/api/food2fork-api.js\");\n\r\n\r\n\r\n\r\nwindow.onload = () => {\r\n    Object(_components_header_render_header__WEBPACK_IMPORTED_MODULE_0__[\"renderHeader\"])();\r\n    Object(_components_article_render_article__WEBPACK_IMPORTED_MODULE_1__[\"renderArticle\"])();\r\n    Object(_services_api_food2fork_api__WEBPACK_IMPORTED_MODULE_2__[\"searchRecipeApi1\"])();\r\n}\r\n\n\n//# sourceURL=webpack:///./src/js/components/render.js?");
 
 /***/ }),
 
@@ -502,11 +561,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*!***************************************!*\
   !*** ./src/js/constants/api-const.js ***!
   \***************************************/
-/*! exports provided: URL_FOOD2FORK */
+/*! exports provided: URL_FOOD2FORK, URL_RECIPEPUPPY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"URL_FOOD2FORK\", function() { return URL_FOOD2FORK; });\nconst URL_FOOD2FORK = 'https://cors.io/?http://food2fork.com/api/search?';\n\n//# sourceURL=webpack:///./src/js/constants/api-const.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"URL_FOOD2FORK\", function() { return URL_FOOD2FORK; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"URL_RECIPEPUPPY\", function() { return URL_RECIPEPUPPY; });\nconst URL_FOOD2FORK = 'https://cors.io/?http://food2fork.com/api/search?';\r\nconst URL_RECIPEPUPPY = 'https://cors.io/?http://www.recipepuppy.com/api/?';\n\n//# sourceURL=webpack:///./src/js/constants/api-const.js?");
 
 /***/ }),
 
@@ -514,11 +573,46 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!**********************************************!*\
   !*** ./src/js/services/api/food2fork-api.js ***!
   \**********************************************/
-/*! exports provided: searchRecipe */
+/*! exports provided: searchRecipeApi1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"searchRecipe\", function() { return searchRecipe; });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _constants_api_const__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../constants/api-const */ \"./src/js/constants/api-const.js\");\n\n\n\nfunction searchRecipe(searchLine) {\n    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(_constants_api_const__WEBPACK_IMPORTED_MODULE_1__[\"URL_FOOD2FORK\"], {\n        params: {\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\n            q: searchLine\n        }\n    })\n        .then(function (response) {\n            console.log(response);\n        })\n        .catch(function (error) {\n            console.log(error);\n        });\n}\n\n//# sourceURL=webpack:///./src/js/services/api/food2fork-api.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"searchRecipeApi1\", function() { return searchRecipeApi1; });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _constants_api_const__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../constants/api-const */ \"./src/js/constants/api-const.js\");\n/* harmony import */ var _components_article_article_result_search_render_recipes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/article/article-result-search/render-recipes */ \"./src/js/components/article/article-result-search/render-recipes.js\");\n/* harmony import */ var _api_recipe_puppy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/recipe-puppy */ \"./src/js/services/api/recipe-puppy.js\");\n\r\n\r\n\r\n\r\n\r\nlet searchRecipeApi1 = () => {\r\n    let searchLine = document.getElementsByClassName('header__search-line')[0].value;\r\n    let buttonSearch = document.getElementsByClassName('header__button-search')[0];\r\n        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(_constants_api_const__WEBPACK_IMPORTED_MODULE_1__[\"URL_FOOD2FORK\"], {\r\n        params: {\r\n            key: '14d4f957bf943fe0ae9172647a0f4d1f',\r\n            q: searchLine\r\n        }\r\n    })\r\n        .then(function (response) {\r\n            Object(_components_article_article_result_search_render_recipes__WEBPACK_IMPORTED_MODULE_2__[\"renderRecipesApi1\"])(response.data.recipes);        \r\n        })\r\n        .catch(function (error) {\r\n            console.log(error);\r\n        });\r\n        buttonSearch.addEventListener('click', function(){searchRecipeApi1(), Object(_api_recipe_puppy__WEBPACK_IMPORTED_MODULE_3__[\"searchRecipeApi2\"])()}, false);\r\n}\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/services/api/food2fork-api.js?");
+
+/***/ }),
+
+/***/ "./src/js/services/api/get-ingredients.js":
+/*!************************************************!*\
+  !*** ./src/js/services/api/get-ingredients.js ***!
+  \************************************************/
+/*! exports provided: getIngredients, renderIngredients */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getIngredients\", function() { return getIngredients; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"renderIngredients\", function() { return renderIngredients; });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nlet getIngredients = (recipe_id, new_li) => {\r\n  axios__WEBPACK_IMPORTED_MODULE_0___default.a\r\n    .get(\"https://cors.io/?http://food2fork.com/api/get?\", {\r\n      params: {\r\n        key: \"14d4f957bf943fe0ae9172647a0f4d1f\",\r\n        rId: recipe_id\r\n      }\r\n    })\r\n    .then(function(response) {\r\n      renderIngredients(response.data.recipe, new_li);\r\n    })\r\n    .catch(function(error) {\r\n      console.log(error);\r\n    });\r\n};\r\nlet renderIngredients = (response, new_li) =>{\r\n  let ingredients = document.createElement(\"p\");\r\n    ingredients.className = \"article__ingredients\";\r\n  for (\r\n    let lengthIngredients = 0;\r\n    lengthIngredients < response.ingredients.length;\r\n    lengthIngredients++\r\n  ) {\r\n    ingredients.innerHTML =\r\n      ingredients.innerHTML + response.ingredients[lengthIngredients] + \", \";\r\n  }\r\n  new_li.appendChild(ingredients);\r\n}\r\n\n\n//# sourceURL=webpack:///./src/js/services/api/get-ingredients.js?");
+
+/***/ }),
+
+/***/ "./src/js/services/api/recipe-puppy.js":
+/*!*********************************************!*\
+  !*** ./src/js/services/api/recipe-puppy.js ***!
+  \*********************************************/
+/*! exports provided: searchRecipeApi2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"searchRecipeApi2\", function() { return searchRecipeApi2; });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _constants_api_const__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../constants/api-const */ \"./src/js/constants/api-const.js\");\n/* harmony import */ var _components_article_article_result_search_render_recipes_api2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/article/article-result-search/render-recipes-api2 */ \"./src/js/components/article/article-result-search/render-recipes-api2.js\");\n\r\n\r\n\r\n\r\nlet searchRecipeApi2 = () => {\r\n    let searchLine = document.getElementsByClassName('header__search-line')[0].value;\r\n    let buttonSearch = document.getElementsByClassName('header__button-search')[0];\r\n    axios__WEBPACK_IMPORTED_MODULE_0___default.a.get(_constants_api_const__WEBPACK_IMPORTED_MODULE_1__[\"URL_RECIPEPUPPY\"], {\r\n        params: {\r\n            q: searchLine,\r\n            i: searchLine\r\n        }\r\n    })\r\n        .then(function (response) {\r\n            Object(_components_article_article_result_search_render_recipes_api2__WEBPACK_IMPORTED_MODULE_2__[\"renderRecipesApi2\"])(response.data.results);\r\n        })\r\n        .catch(function (error) {\r\n            console.log(error);\r\n        });\r\n}\n\n//# sourceURL=webpack:///./src/js/services/api/recipe-puppy.js?");
+
+/***/ }),
+
+/***/ "./src/style/article/article.less":
+/*!****************************************!*\
+  !*** ./src/style/article/article.less ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/less-loader/lib/loader.js!./article.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/lib/loader.js!./src/style/article/article.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/style/article/article.less?");
 
 /***/ }),
 
@@ -529,7 +623,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/less-loader/dist/cjs.js!./header.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/style/header/header.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/style/header/header.less?");
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/less-loader/lib/loader.js!./header.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/lib/loader.js!./src/style/header/header.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/style/header/header.less?");
 
 /***/ }),
 
@@ -540,7 +634,7 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/less-loader/dist/cjs.js!./layout.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/style/layout.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/style/layout.less?");
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/less-loader/lib/loader.js!./layout.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/lib/loader.js!./src/style/layout.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/style/layout.less?");
 
 /***/ })
 

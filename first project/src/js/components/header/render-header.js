@@ -1,6 +1,6 @@
-import '../../../style/header/header.less'
+import '../../../style/header/header.less';
 
-window.onload = function(){
+export let renderHeader= () => {
 let application = document.getElementsByClassName("application")[0];
 let header = document.createElement('header');
 header.className = 'header';
