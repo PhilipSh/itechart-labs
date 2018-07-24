@@ -1,6 +1,11 @@
 import {renderIngredientsApi2} from './render-ingredients-api2';
+import { addEventFavorites } from '../../header/header__button-favorites/event-button-favorites';
+import {searchRecipeApi2} from '../../../services/api/recipe-puppy';
+
 
 export let renderRecipesApi2 = (arrRecipes) => {
+  let searchLine = document.getElementsByClassName('header__search-line')[0].value;
+  
     let resultSearch = document.getElementsByClassName("article__result-search-api2")[0];
     while(resultSearch.firstChild) {
       resultSearch.removeChild(resultSearch.firstChild);
@@ -25,6 +30,7 @@ export let renderRecipesApi2 = (arrRecipes) => {
       new_li.className = "article__recipe-dish";
       buttonFavorites.className = "article__button-favorites";
       buttonIgredients.className = "article__button-ingredients";
+      addEventFavorites(arrRecipes[numberRecipe], numberRecipe);
       buttonIgredients.addEventListener("click",renderIngredientsApi2.bind(null, arrRecipes[numberRecipe], new_li));
     }
     console.log(arrRecipes);
