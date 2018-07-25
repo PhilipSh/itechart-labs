@@ -1,14 +1,13 @@
-export class Favorites {
-    constructor(recipe) {
-        this.recipe = recipe;
+import { Favorites } from "../../article/article__button-favorites/article__button-favorites";
+
+const addEventButtonShowFavorites = () => {
+    console.log('12324');
+    let buttonShowFavorites = document.getElementsByClassName('header__button-favorites')[0];
+    let showFavoriteDish = () => {
+        let favoriteDish = new Favorites();
+        favoriteDish.renderFavorites();
     }
-    addFavorites() {
-        localStorage.setItem(this.recipe.title, this.recipe.title);
-        console.log(this.recipe);
-    }
-    renderFavorites() {
-        for (let i = 1; i < localStorage.length; i++) {
-            console.log(localStorage.getItem(i))
-        }
-    }
+    buttonShowFavorites.addEventListener('click', showFavoriteDish, false);
 }
+
+export {addEventButtonShowFavorites};

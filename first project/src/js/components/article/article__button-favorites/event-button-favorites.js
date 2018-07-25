@@ -1,12 +1,15 @@
-import { Favorites } from './header__button-favorites';
+import { Favorites } from './article__button-favorites';
 
 export let addEventFavorites = (recipe, numberRecipe) => {
     if (document.getElementsByClassName('article__button-favorites')) {
-        let buttonFavorites = document.getElementsByClassName('article__button-favorites')[numberRecipe];
+        let buttonAddFavorites = document.getElementsByClassName('article__button-favorites')[numberRecipe];
+
+
         let createFavoriteDish = (recipe) => {
             let favoritesDish = new Favorites(recipe);
             favoritesDish.addFavorites();
         };
-        buttonFavorites.addEventListener('click', createFavoriteDish.bind(null, recipe), false);
+
+        buttonAddFavorites.addEventListener('click', createFavoriteDish.bind(this, recipe), false);
     }
 }

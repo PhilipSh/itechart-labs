@@ -1,9 +1,10 @@
-import {renderHeader} from '../components/header/render-header';
-import {renderArticle} from '../components/article/render-article';
-import {searchRecipeApi1} from '../services/api/food2fork-api';
+import {renderHeader} from './header/render-header';
+import {renderArticle} from './article/render-article';
+import { selectApi } from './header/header__button-select-api/header__button-select-api';
+import { addEventButtonShowFavorites } from './header/header__button-favorites/header__button-favorites';
 
 window.onload = () => {
     renderHeader();
     renderArticle();
-    searchRecipeApi1();
+    addEventButtonShowFavorites();
 }
