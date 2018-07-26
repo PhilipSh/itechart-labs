@@ -18,6 +18,12 @@
   margin: 10px 0px;
   padding: 5px;
 }
+.header .header__button-drop-down,
+.header .header__button-favorites,
+.header .header__button-search {
+  outline: none;
+  cursor: pointer;
+}
 .header .header__button-search,
 .header .header__button-favorites {
   margin: 7px 10px 7px 10px;
@@ -45,10 +51,10 @@
   border: none;
   width: 100px;
   height: 34px;
-  cursor: pointer;
 }
-.header .header__button-drop-down:hover,
-.header .header__button-drop-down:focus {
+.header .header__button-search:hover,
+.header .header__button-favorites:hover,
+.header .header__button-drop-down:hover {
   background-color: #2980B9;
 }
 .header .header__button-drop-down:after {

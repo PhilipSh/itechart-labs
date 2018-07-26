@@ -7,7 +7,7 @@
     grid-row-end: 3;
     .article__result-search-api{
         list-style: none;
-        padding-left: 20px;
+        padding-left:0px;
         .article__recipe-dish{
             display: grid;
             grid-template-columns:250px 1fr 100px;
@@ -36,6 +36,11 @@
                 background: @color-button;
                 color: #fff;
                 border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            .article__button-favorites:hover, .article__button-ingredients:hover{
+                background-color: #2980B9;
             }
             .article__button-favorites{
                 width: 70px;

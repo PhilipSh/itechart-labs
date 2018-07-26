@@ -1,8 +1,7 @@
 import axios from 'axios';
-import {URL_FOOD2FORK,KEY_FOR_FOOD2FORK} from '../../constants/api-const';
+import { URL_FOOD2FORK, KEY_FOR_FOOD2FORK } from '../../constants/api-const';
 
-const searchRecipeApi1 = (searchLine) => {
-        return axios.get(URL_FOOD2FORK, {
+const searchRecipeApiFood2Fork = (searchLine) => axios.get(URL_FOOD2FORK, {
         params: {
             key: KEY_FOR_FOOD2FORK,
             q: searchLine
@@ -14,6 +13,5 @@ const searchRecipeApi1 = (searchLine) => {
         .catch(function (error) {
             console.log(error);
         });
-}
 
-export {searchRecipeApi1};
+export { searchRecipeApiFood2Fork };

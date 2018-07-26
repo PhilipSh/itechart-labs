@@ -1,8 +1,7 @@
 import axios from 'axios';
-import {URL_RECIPEPUPPY} from '../../constants/api-const';
+import { URL_RECIPEPUPPY } from '../../constants/api-const';
 
-const searchRecipeApi2 = (searchLine) => {
-    return axios.get(URL_RECIPEPUPPY, {
+const searchRecipeApiRecipePuppy = (searchLine) => axios.get(URL_RECIPEPUPPY, {
         params: {
             i: searchLine
         }
@@ -13,6 +12,5 @@ const searchRecipeApi2 = (searchLine) => {
         .catch(function (error) {
             console.log(error);
         });
-}
 
-export {searchRecipeApi2};
+export { searchRecipeApiRecipePuppy };

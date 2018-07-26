@@ -1,10 +1,10 @@
-import { renderIngredientsApi2 } from './render-ingredients-api2';
-import { addEventFavorites } from '../../article/article__button-favorites/event-button-favorites';
-import { searchRecipeApi2 } from '../../../services/api/recipe-puppy';
+import { renderIngredientsApiRecipePuppy } from './render-ingredients-api2';
+import { addEventFavorites } from "../article__button-favorites/event-button-favorites";
+import { searchRecipeApiRecipePuppy } from '../../../services/api/recipe-puppy';
 
-export let renderRecipesApi2 = () => {
-  let searchLine = document.getElementsByClassName('header__search-line')[0].value;
-  searchRecipeApi2(searchLine).then(function (arrRecipes) {
+export const renderRecipesApiRecipePuppy = () => {
+  const searchLine = document.getElementsByClassName('header__search-line')[0].value;
+  searchRecipeApiRecipePuppy(searchLine).then((arrRecipes) => {
     let resultSearch = document.getElementsByClassName("article__result-search-api")[0];
     while (resultSearch.firstChild) {
       resultSearch.removeChild(resultSearch.firstChild);
@@ -30,8 +30,8 @@ export let renderRecipesApi2 = () => {
       buttonFavorites.className = "article__button-favorites";
       buttonIgredients.className = "article__button-ingredients";
       addEventFavorites(arrRecipes[numberRecipe], numberRecipe);
-      buttonIgredients.addEventListener("click", renderIngredientsApi2.bind(null, arrRecipes[numberRecipe], new_li));
+      buttonIgredients.addEventListener("click", renderIngredientsApiRecipePuppy.bind(null, arrRecipes[numberRecipe], new_li));
     }
-    console.log(arrRecipes);
-  })
+
+  });
 };
